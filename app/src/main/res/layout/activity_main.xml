@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:textColor="#f20"
+        android:id="@+id/textviewTitle"
+        android:text="Dang nhap thong tin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:hint="Nhap tai khoan"
+        android:layout_below="@id/textviewTitle"
+        android:id="@+id/edittextTaikhoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:inputType="textPassword"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:hint="Nhap mat khau"
+        android:layout_below="@id/edittextTaikhoan"
+        android:id="@+id/edittextMatkhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:textSize="20sp"
+        android:text="Luu mat khau"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/edittextMatkhau"
+        android:id="@+id/checkboxLuu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="Dang nhap"
+        android:id="@+id/buttondangnhap"
+        android:layout_marginTop="80dp"
+        android:layout_below="@id/checkboxLuu"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
